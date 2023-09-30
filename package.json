@@ -23,6 +23,7 @@
     "type": "git",
     "url": "https://github.com/tiuweehan/sifu.git"
   },
+  "publisher": "tiuweehan",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
