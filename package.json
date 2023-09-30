@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "sifu.helloWorld",
-        "title": "Hello World"
+        "command": "sifu.saveAllUnchangedFiles",
+        "title": "Save All Unchanged Files"
       }
     ]
   },
