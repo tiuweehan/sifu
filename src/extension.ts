@@ -5,7 +5,7 @@ import * as fs from 'fs';
 
 async function saveAllUnchangedFiles() {
     await Promise.all(vscode.workspace.textDocuments.map(async doc => {
-        if (doc.isDirty) {
+        if (fs.existsSync(doc.fileName) && doc.isDirty) {
             const savedContent = await fs.promises.readFile(doc.fileName, 'utf-8');
             const editorContent = doc.getText();
 
