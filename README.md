@@ -1,5 +1,9 @@
 # Sifu - Save If File Unchanged
 
+> **_NOTE:_** For this extension to work, you need to set `files.saveConflictResolution` to `overwriteFileOnDisk` in your settings
+
+(This README was written by ChatGPT)
+
 Welcome to "Sifu" - a VSCode extension designed to assist developers in handling unsaved (dirty) files and saving them under specific circumstances in their coding journey.
 
 ## Requirements

@@ -2,7 +2,7 @@
   "name": "sifu",
   "displayName": "Save If File Unchanged",
   "description": "Save If File Unchanged",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -19,7 +19,18 @@
         "command": "sifu.saveAllUnchangedFiles",
         "title": "Save All Unchanged Files"
       }
-    ]
+    ],
+    "configuration": {
+        "type": "object",
+        "title": "Sifu configuration",
+        "properties": {
+            "sifu.runOnStartup": {
+                "type": "boolean",
+                "default": true,
+                "description": "Immediately try to save all unchanged files on opening a workspace"
+            }
+        }
+    }
   },
   "repository": {
     "type": "git",
